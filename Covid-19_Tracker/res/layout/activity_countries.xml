@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.covid_19_tracker.Countries"
+    tools:ignore="MergeRootFrame" >
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img1" />
+
+
+        <TextView 
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="India"/>
+
+     <RelativeLayout
+         android:id="@+id/container2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:background="#fff" >
+        
+         <TextView 
+             android:id="@+id/t1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Positive"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+             android:layout_marginTop="5dp"
+             android:layout_marginBottom="10dp"
+             android:textColor="#FFA500"/>
+
+         <TextView
+             android:id="@+id/t2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/t1"
+             android:layout_below="@+id/t1"
+             android:layout_marginBottom="10dp"
+             android:text="Heal"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+             android:textColor="#00ff00" />
+         
+         
+         <TextView
+             android:id="@+id/t3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/t2"
+             android:layout_below="@+id/t2"
+             android:layout_marginBottom="10dp"
+             android:text="Dead"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+             android:textColor="#ff0000" />
+         
+         
+         <TextView
+             android:id="@+id/t4"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/t3"
+             android:layout_below="@+id/t3"
+             android:layout_marginBottom="10dp"
+             android:text="Active"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+             android:textColor="#00ffff" />
+         
+         
+         <TextView
+             android:id="@+id/t5"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/t4"
+             android:layout_below="@+id/t4"
+             android:text="Serious"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+             android:textColor="#6C2DC7" />
+
+         <TextView
+             android:id="@+id/cases"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBottom="@+id/t1"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="70dp"
+             android:text="0" 
+             android:textAppearance="?android:attr/textAppearanceLarge"
+              android:textColor="#FFA500"/>
+         
+         <TextView
+             android:id="@+id/heal"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBottom="@+id/t2"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="70dp"
+             android:text="0" 
+             android:textAppearance="?android:attr/textAppearanceLarge"
+             android:textColor="#00ff00"/>
+         
+         <TextView
+             android:id="@+id/dead"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBottom="@+id/t3"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="70dp"
+             android:text="0" 
+             android:textAppearance="?android:attr/textAppearanceLarge"
+             android:textColor="#ff0000" />
+         
+         <TextView
+             android:id="@+id/active"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBottom="@+id/t4"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="70dp"
+             android:text="0" 
+             android:textAppearance="?android:attr/textAppearanceLarge"
+             android:textColor="#00ffff" />
+         
+         <TextView
+             android:id="@+id/serious"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBottom="@+id/t5"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="70dp"
+             android:text="0" 
+             android:textAppearance="?android:attr/textAppearanceLarge"
+             android:textColor="#6C2DC7" />
+           
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/imageButton1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="show"
+        android:text="Back" 
+        android:textColor="#fff"
+        android:background="@drawable/but_circular"/>
+
+</LinearLayout>
